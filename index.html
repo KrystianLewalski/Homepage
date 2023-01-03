@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krystian Lewalski - strona o mnie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div>
+        <header class="header">
+            <h1 class="header__mainHeader">Krystian Lewalski</h1>
+            <img class="header__image"
+                src="https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.18169-9/14568083_585783921606710_8509583352696284766_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=huP10_qQJtQAX8ApIt3&_nc_ht=scontent.fwaw7-1.fna&oh=00_AfD9_CUoeXv1voU0XqDdZWbrRGnDJ_sQeWA-1N--CGXpug&oe=63DC0B8C"
+                alt="Zdjęcie Krystiana Lewalskiego">
+            <p>
+                <button class="button">Schowaj zdjęcie</button>
+                <button class="themeButton">Ciemny motyw</button>
+            </p>
+        </header>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__listItem"> <a class="navigation__link" href="#o mnie">O sobie</a></li>
+                <li class="navigation__listItem"> <a class="navigation__link"
+                        href="#zainteresowania">Zainteresowania</a></li>
+                <li class="navigation__listItem"> <a class="navigation__link" href="#cele">Cele</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="omnie">
+                <h2 class="section__header">O mnie</h2>
+                <p>Do tej pory studiowałem historię głównie z zainteresowania.
+                    Zjeździłem także trochę Polski jako kierowca ciężarówki. Mimo, że nie mam żadnego wykształcenia
+                    związanego z
+                    IT to
+                    sam kontakt
+                    z komputerem mam od małego. Ze względu na zacięcię do sprzętu większość prac związanych z naprawą
+                    czy konserwacją komputerów domowych przeprowadzałem sam.
+                </p>
+            </section>
+            <section id="zainteresowania">
+                <h2 class="section__header">Zainteresowania</h2>
+                <p>Uwielbiam pracować przy sprzęcie komputerowym. <strong>Historia</strong> - nauka o naszej przeszłości
+                    jest nie tylko ważna ale i może być ciekawa. <strong>Auta</strong> - oprócz komputerów zajmuje się
+                    czasem konserwacją prywatnego auta. Obok samodzielnej
+                    naprawy
+                    uwielbiam
+                    także grać w różne gry głównie grand strategy.</p>
+                <div class="tableContainer">
+                    <table class="table">
+                        <caption class="table__caption">Ulubione grand strategy</caption>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">Tytuł</th>
+                            <th class="table__cell table__cell--header" scope="col">Rok wydania</th>
+                            <th class="table__cell table__cell--header" scope="col">Studio</th>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Crusader Kings III</th>
+                            <td class="table__cell">2020</td>
+                            <td class="table__cell" rowspan="4">Paradox Interactive</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Europa Universalis IV</th>
+                            <td class="table__cell">2013</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Hearts of Iron IV</th>
+                            <td class="table__cell">2016</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell" scope="row">Stellaris</th>
+                            <td class="table__cell">2016</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="cele">
+                <h2 class="section__header">Cele</h2>
+                <p>Do czego chce dążyć? Do tego by się rozwijać - ciężko o to jako kierowca z nieregularnym czasem
+                    pracy.
+                    Zdobycie
+                    cennej wiedzy która nie tylko pozwoli mi rozszerzyć horyzonty.
+                </p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Kontakt: <a href="mailto:Krystian.Lewalski@interia.pl">Krystian.Lewalski@interia.pl</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

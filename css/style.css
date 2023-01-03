@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: aliceblue;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 0 20px grey;
+    margin-bottom: 10px;
+}
+
+.themeButton {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 0 20px grey;
+    margin-top: 10px;
+}
+
+.darkTheme {
+    background-color: #828087;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: brown;
+}
+
+.footer:hover {
+    color: brown
+}
+
+.footer:active {
+    color: red
+}
+
+.display {
+    display: none;
+}
