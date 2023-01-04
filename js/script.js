@@ -1,18 +1,29 @@
-console.log("Cześć!")
+{
+    const welcome = () => {
+        console.log("Cześć!")
+    }
 
-let button = document.querySelector(".button");
-let header__image = document.querySelector(".header__image");
-let themeButton = document.querySelector(".themeButton");
-let body = document.querySelector(".body")
+    const onChangeBackgroundClick = () => {
+        const body = document.querySelector(".body")
+        body.classList.toggle("darkTheme");
+        themeButton.innerText = body.classList.contains("darkTheme") ? "Jasny motyw" : "Ciemny motyw";
+    };
 
-button.addEventListener("click", () => {
-    header__image.classList.toggle("display");
+    const onHideImageClick = () => {
+        const header__image = document.querySelector(".header__image");
+        header__image.classList.toggle("display");
+        button.innerText = header__image.classList.contains("display") ? "Pokaż zdjęcie" : "Schowaj zdjęcie";
+    };
 
-    button.innerText = header__image.classList.contains("display") ? "Pokaż zdjęcie" : "Schowaj zdjęcie";
-});
+    const init = () => {
+        const button = document.querySelector(".button");
+        const themeButton = document.querySelector(".themeButton");
 
-themeButton.addEventListener("click", () => {
-    body.classList.toggle("darkTheme");
+        button.addEventListener("click", onHideImageClick);
 
-    themeButton.innerText = body.classList.contains("darkTheme") ? "Jasny motyw" : "Ciemny motyw";
-});
+        themeButton.addEventListener("click", onChangeBackgroundClick);
+
+        welcome();
+    };
+    init();
+}
