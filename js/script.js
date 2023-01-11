@@ -10,8 +10,8 @@
     };
 
     const onHideImageClick = () => {
-        const header__image = document.querySelector(".header__image");
-        header__image.classList.toggle("display");
+        const headerImage = document.querySelector(".headerImage");
+        headerImage.classList.toggle("display");
         button.innerText = header__image.classList.contains("display") ? "Pokaż zdjęcie" : "Schowaj zdjęcie";
     };
 
